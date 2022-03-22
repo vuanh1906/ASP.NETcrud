@@ -1,0 +1,25 @@
+﻿@model Instructor
+<h1>New instructor</h1>
+
+<form method="post">
+    <div class="form-group">
+                <label asp-for="FirstMidName" class="control-label"></label>
+                <input asp-for="FirstMidName" class="form-control" />
+                <span asp-validation-for="FirstMidName" class="text-danger"></span>
+     </div>
+
+     <div class="form-group">
+                <label asp-for="LastName" class="control-label"></label>
+                <input asp-for="LastName" class="form-control" />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+     </div>
+@*
+     <div class="form-group">
+                <label asp-for="HireDate" class="control-label"></label>
+                <input asp-for="HireDate" class="form-control" />
+                <span asp-validation-for="HireDate" class="text-danger"></span>
+     </div>*@
+
+
+     <button type="submit" class="btn btn-primary">Save</button>
+</form>
